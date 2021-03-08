@@ -1,4 +1,5 @@
 //Program to open a website on browser
+//Use firefox version below 47 to get proper result
 
 package test;
 
@@ -10,7 +11,7 @@ public class FirstSeleniumTest {
 	public static void main(String[] args) {
 		WebDriver driver = new FirefoxDriver();
 		
-		driver.get("http://google.com/");
+		driver.get("http://selenium.dev/");
 		
 		driver.quit();
 	}
