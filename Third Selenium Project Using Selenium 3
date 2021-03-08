@@ -1,0 +1,23 @@
+//Program to open a website on browser using selenium 3
+//Use firefox version below 47 to get proper result
+package test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FirstSeleniumTest {
+
+	public static void main(String[] args) {
+		
+		String projectLocation = System.getProperty("user.dir");
+		
+		System.setProperty("webdriver.gecko.driver", projectLocation+ "\\lib\\geckodriver\\geckodriver.exe");
+		System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
+		
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("http://selenium.dev/");
+		
+		driver.quit();
+	}
+}
